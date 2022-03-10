@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration form</title>
+</head>
+<body>
+
+    <form>
+        <table  align="center" width="500">
+            <caption>Registration form</caption>
+            <tr>
+                <td>User name</td>
+                <td><input type="text" name="txtname" placeholder="max 10 chars only" autofocus required maxlength="10" size="20" pattern="[A-Z]"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="txtpassword" placeholder="password should be 4 to 15 chars" required pattern="[a-z A-Z 0-9]"></td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td>
+                    <input type="number" name="txtage" min="15" max="30" value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="txtemail">
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Color</td>
+                <td>
+                    <input type="color" name="txtcolor">
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite cricketer name</td>
+                <td>
+                    <input type="text" list="players">
+                    <datalist id="players">
+                        <option>Musfiqur Rahim</option>
+                        <option>Sakib</option>
+                        <option>Mahmudullah</option>
+                        <option>Mostoza</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Price Range</td>
+                <td>
+                    <input type="range" name=""txtprice>
+                </td>
+            </tr>
+            <tr>
+                <td>upload</td>
+                <td>
+                    <input type="file" name="txtfile" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
